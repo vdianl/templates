@@ -691,6 +691,19 @@
     "volumes": ["/data"]
   },
   {
+    "type": "container",
+    "title": "Nessus",
+    "description": "Nessus Vulnerability Scanner in a Docker container",
+    "categories": ["Pentest tools"],
+    "platform": "linux",
+    "note": "This is a Nessus Vulnerability Scanner container based on the CentOS image. This build is linked to the upstream CentOS, so any updates pushed to the upstream will trigger an automated build of this image. This image does not contain the activation keys",
+    "logo": "https://hackertarget.com/openvas-logo-main.png",
+    "image": "mikenowak/nessus:latest",
+    "ports": [
+      "8834/tcp"
+    ]
+  },
+  {
     "type": "stack",
     "title": "OpenFaaS",
     "description": "Serverless functions made simple",
