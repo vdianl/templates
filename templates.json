@@ -704,6 +704,20 @@
     ]
   },
   {
+    "type": "container",
+    "title": "Dradis",
+    "description": "Dradis: An open-source collaboration and reporting platform for IT security experts",
+    "categories": ["Pentest tools"],
+    "platform": "linux",
+    "note": "The Dradis Framework is an open-source collaboration and reporting platform for IT security experts. Dradis is a self-contained web application that provides a centralized repository of information to keep track of everything that has been done so far, and what is still ahead.",
+    "logo": "https://dradisframework.com/images/logo_dradispro_small.png",
+    "image": "zuazo/dradis:latest",
+    "ports": [
+      "3000/tcp"
+    ],
+    "volumes": ["/dbdata"]
+  },
+  {
     "type": "stack",
     "title": "OpenFaaS",
     "description": "Serverless functions made simple",
