@@ -669,6 +669,28 @@
     "volumes": ["/data/contentbox/db", "/app/includes/shared/media"]
   },
   {
+    "type": "container",
+    "title": "OpenVAS",
+    "description": "A Docker container for OpenVAS on Ubuntu. By default, the latest images includes the OpenVAS Base as well as the NVTs and Certs required to run OpenVAS. We made the decision to move to 9 as the default branch since 8 seems to have many issues in docker.",
+    "categories": ["Pentest tools"],
+    "platform": "linux",
+    "note": "Only us this tool on websites you have permission to pentest",
+    "logo": "https://hackertarget.com/openvas-logo-main.png",
+    "image": "mikesplain/openvas:latest",
+    "ports": [
+      "443/tcp",
+      "9390/tcp"
+    ],
+    "env": [
+      {
+        "name": "OV_PASSWORD",
+        "label": "Set password for OpenVAS",
+        "set": "LetMeIn!"
+      }
+    ],
+    "volumes": ["/data"]
+  },
+  {
     "type": "stack",
     "title": "OpenFaaS",
     "description": "Serverless functions made simple",
